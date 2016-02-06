@@ -14,7 +14,8 @@ def run_shell():
         length = len(lst)
         # print(length, flush=True)
         if length > 0:
-            subprocess.call(line, shell=True)
+            code = subprocess.call(line, shell=True)
+            print(code)
 
 run_shell()
     
