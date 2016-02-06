@@ -1,5 +1,6 @@
 # wooo shellllllss
 import sys
+import subprocess
 
 
 def print_prompt():
@@ -8,8 +9,12 @@ def print_prompt():
 
 def run_shell():
     while True:
-        input(print_prompt())
-
+        line = input(print_prompt())
+        lst = line.split(' ')
+        length = len(lst)
+        # print(length, flush=True)
+        if length > 0:
+            subprocess.call(line, shell=True)
 
 run_shell()
     
