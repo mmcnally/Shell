@@ -1,0 +1,6 @@
+
+# nobody likes these
+.DS_STORE
+
+# machine dependent run script
+run.sh
