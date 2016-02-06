@@ -1,7 +1,10 @@
 # wooo shellllllss
 import sys
+import os
 import subprocess
 
+curr_dir = os.getcwd()
+print(curr_dir)
 
 def print_prompt():
     return '> '
@@ -16,6 +19,7 @@ def run_shell():
         if length > 0:
             code = subprocess.call(line, shell=True)
             print(code)
+            
 
 run_shell()
     
